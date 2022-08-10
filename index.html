@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Wishlist</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="vh-100 gradient-custom-2">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-12 col-xl-10">
+            <div class="card mask-custom">
+              <div class="card-body p-4 text-white">
+                <div class="text-center pt-3 pb-2">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp"
+                    alt="Check"
+                    width="60"
+                  />
+                  <h2 class="my-4">Car Wishlist</h2>
+                  <div class="d-flex justify-content-between">
+                    <a href="new.html" class="btn btn-small btn-outline-info"
+                      >New</a
+                    >
+
+                    <h6 class="mb-0">
+                      <span id="wallet-id" class="badge bg-success"></span>
+                    </h6>
+
+                    <button id="logout" class="btn btn-sm btn-secondary">Logout</button>
+                  </div>
+                </div>
+
+                <table class="table text-white mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Model</th>
+                      <th scope="col">Mileage</th>
+                      <th scope="col">Year</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="car-records">
+                    <!-- Start of List -->
+                    
+                    <!-- End of List -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/gh/nearprotocol/near-api-js/dist/near-api-js.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
